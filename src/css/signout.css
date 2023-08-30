@@ -1,0 +1,42 @@
+
+.card .asd{
+  display: flex;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 10px;
+  height: 10rem;
+  width: 33rem;
+  border-radius: 20px;
+  margin-top: 11rem;
+  margin-left: 13rem;
+}
+
+/* /sent save button/ */
+.button-container {
+  text-align: center;
+}
+
+.save-button,
+.send-button {
+  padding: 10px 20px;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  border: gray;
+  background-color: pink;
+  color: #333;
+  font-size: 14px;
+  border-radius: 10px;
+}
+
+.save-button:hover,
+.send-button:hover {
+  background-color: lightslategray;
+  cursor: pointer;
+}
+
+.save-button + .send-button {
+  margin-left: 300px;
+}

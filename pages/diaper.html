@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diaper change</title>
+
+    <!--================ style ==================-->
+    <link rel="stylesheet" href="../src/css/diaper.css">
+</head>
+
+<body>
+    <!-- =============== Navigation ================ -->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <img src="mom&me.jpg" alt="logo">
+                        </span>
+                        <span class="title1"><h1>Mom & Me</h1></span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../pages/first.html">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../pages/comnote.html">
+                        <span class="icon">
+                            <ion-icon name="clipboard-outline"></ion-icon>
+                        </span>
+                        <span class="title">Note</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../pages/comcontact.html">
+                        <span class="icon">
+                            <ion-icon name="call-outline"></ion-icon>
+                        </span>
+                        <span class="title">Contact</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="../pages/comsetting.html">
+                        <span class="icon">
+                            <ion-icon name="settings-outline"></ion-icon>
+                        </span>
+                        <span class="title">Settings</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="../pages/comsignout.html">
+                        <span class="icon">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ========================= Main ==================== -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+
+                <div class="user">
+                  <label>
+                    <input type="text" placeholder="Account">
+                    <img src="asq.jpg" alt="user">
+                  </label>
+                </div>
+            </div>
+
+            <!-- ======================= Cards ================== -->
+
+            <div class="cardBox">
+
+                <a href="track.html">
+                <div class="back-card">
+                    <div>
+                        <button class="back-button">Back</button>
+                    </div>
+                </div>
+                </a>
+  
+                <div class="head-card">
+                    <div>
+                        <div class="cardName">Diaper</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ================ Order Details List ================= -->
+            <div class="row">
+                <div class="leftcolumn">
+                    <form method="POST" action="diaper.php">
+
+                  <div class="card">
+                    <h1>Diaper Change details: </h1><br>
+                    <div id="tracker">
+                      <label for="date"><h3>Date:</h3></label>
+                      <input type="date" name="date" id="date" style="font-size: 20px;">
+                      <div id="date"></div>
+                      <br><br>
+                      
+                      <div class="checkbox-group">
+                        <label for="poop"><h3>Poop:</h3></label>
+                        <input type="checkbox" id="poop" name="poop" value="poop" >
+                    </div>
+            
+                    <div class="checkbox-group">
+                        <label for="wet"><h3>Wet:</h3></label>
+                        <input type="checkbox" id="wet" name="wet" value="wet" >
+                    </div><br><br>
+
+                    <div class="wd">
+                        <h3>Notes:</h3>
+                        <textarea class="wd-text" name="notes" style = "font-size: larger;"></textarea>
+                    </div> <br>
+
+                    <div style="display: flex; justify-content: center;">
+                        <button type="submit" name="submit" id="pictureButton">
+                            <img src="../src/img/diap.png" alt="diaper">
+                        </button>
+                       </div>
+                    </form>
+                      
+    
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="rightcolumn">
+
+                  <div class="card">
+
+                    <br><br><br><br><br><br><br><br>
+
+                    <a href="diaperlog.php">
+                    <button class="button button1" >View diaper change log</button>   
+                    </a>
+                  </div>
+
+                </div>
+
+              </div>
+        </div>
+    </div>
+
+    <!-- =========== Scripts =========  -->
+    <script src="../scripts/diaper.js"></script>
+
+    <!-- ====== ionicons ======= -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+</body>
+</html>

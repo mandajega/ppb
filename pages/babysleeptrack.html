@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleep Tracker</title>
+
+    <!--================ style ==================-->
+    <link rel="stylesheet" href="../src/css/sleepStyle.css">
+</head>
+
+<body>
+    <!-- =============== Navigation ================ -->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <img src="mom&me.jpg" alt="logo">
+                        </span>
+                        <span class="title1"><h1>Mom & Me</h1></span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../pages/first.html">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../pages/comnote.html">
+                        <span class="icon">
+                            <ion-icon name="clipboard-outline"></ion-icon>
+                        </span>
+                        <span class="title">Note</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../pages/comcontact.html">
+                        <span class="icon">
+                            <ion-icon name="call-outline"></ion-icon>
+                        </span>
+                        <span class="title">Contact</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="../pages/comsetting.html">
+                        <span class="icon">
+                            <ion-icon name="settings-outline"></ion-icon>
+                        </span>
+                        <span class="title">Settings</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="../pages/comsignout.html">
+                        <span class="icon">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ========================= Main ==================== -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+
+                <div class="user">
+                  <label>
+                    <input type="text" placeholder="Account">
+                    <img src="asq.jpg" alt="user">
+                  </label>
+                </div>
+            </div>
+
+            <!-- ======================= Cards ================== -->
+            <div class="cardBox">
+
+              <a href="track.html">
+              <div class="back-card">
+                  <div>
+                      <button class="back-button">Back</button>
+                  </div>
+              </div>
+              </a>
+
+              <div class="head-card">
+                  <div>
+                      <div class="cardName">Sleep Tracker</div>
+                  </div>
+              </div>
+
+          </div>
+
+            <!-- ================ Order Details List ================= -->
+            <div class="row">
+                <div class="leftcolumn">
+
+                   <form method="POST" action="babysleepTrack.php"> 
+
+                  <div class="card">
+                    <h1>Sleep details: </h1><br>
+                    <div id="tracker">
+                      <label for="date"><h2>Date:</h2></label>
+                      <input type="date" id="date" name="date" style="font-size: 20px;" required>
+                      <div id="date"></div>
+                      <br><br>
+                      <label for="hours"><h2>Hours of Sleep:</h2></label>
+                      <input type="number" id="hours" name="hours" min="0" max="24" step="0.5" style="font-size: 21px;" required>
+                      <div id="hours"></div>
+                  
+                      <div style="display: flex; justify-content: center; ">
+                        <button id="pictureButton"  type="submit" name="submit">
+                            <img src="../src/img/sleep.png" alt="sleep">
+                        </button>
+                       </div>
+                    </form>
+                       <p style="text-align: center;"> click the button! </p>
+                    </div>
+                  </div>
+
+                </div>
+            
+
+                <div class="rightcolumn">
+
+                  <div class="card">
+                    <div class="wd">
+                        
+                    </div>
+
+ <br><br><br><br><br><br><br><br>
+                    <a href="babysleeplog.php">
+                    <button class="button button1" onclick="addSleep()">View my baby's sleep log</button>  
+                    </a>     
+                </div>
+
+              </div>
+        </div>
+    </div>
+
+    <!-- =========== Scripts =========  -->
+    <script src="sleepScript.js"></script>
+
+    <!-- ====== ionicons ======= -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+</body>
+</html>

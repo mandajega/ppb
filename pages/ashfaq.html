@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+
+    <!--================ style ==================-->
+    <link rel="stylesheet" href="../src/css/ashfaq.css">
+</head>
+
+<body>
+    <!-- =============== Navigation ================ -->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <img src="momandme.jpg" alt="logo">
+                        </span>
+                        <span class="title1"><h1>Mom & Me</h1></span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../pages/first.html">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../pages/comnote.html">
+                        <span class="icon">
+                            <ion-icon name="clipboard-outline"></ion-icon>
+                        </span>
+                        <span class="title">Note</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../pages/comcontact.html">
+                        <span class="icon">
+                            <ion-icon name="call-outline"></ion-icon>
+                        </span>
+                        <span class="title">Contact</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="../pages/comsetting.html">
+                        <span class="icon">
+                            <ion-icon name="settings-outline"></ion-icon>
+                        </span>
+                        <span class="title">Settings</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="../pages/comsignout.html">
+                        <span class="icon">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ========================= Main ==================== -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+
+               
+                <div class="user">
+                    <!-- <input type="text"  placeholder="Account"> -->
+                    <img src="amanda.jpg" alt="">
+                    <div>
+                        <h4>Amanda Jeganathan</h4>
+                        <small>Awesome admin</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cardBox">
+
+              <a href="bottle.html">
+              <div class="back-card">
+                  <div>
+                      <button class="back-button">Back</button>
+                  </div>
+              </div>
+              </a>
+            </div>  
+
+            <div class="button">
+                <center>
+                    <a href="ashfaq.html">
+                        <button class="button">Breast</button>
+                            </a>
+                            <a href="bottle.html">
+                        <button class="button">Bottle</button>
+                            </a>
+                            <a href="solids.html">
+                        <button class="button">Solids</button>
+                            </a>
+                </center>
+              </div>
+                 <br>        
+            <a href="breastlog.php">
+                <button>View my baby's breast feeding log</button>
+                            </a>
+            
+              
+              <form id="regForm" action="ashfaq.php" method="post">
+            <div class="form-group">
+
+                <label for="date"><h2>Date:</h2></label>
+                <input type="date" name="date" id="date" style="font-size: 20px;"><br><br>
+            
+            
+                <label for="minutes"><h2>Minutes:</h2></label>
+                <input type="number" name="minutes" id="minutes" min="0" max="59" required>
+              
+            
+              
+                <label for="seconds"><h2>Seconds:</h2></label>
+                <input type="number" name="seconds" id="seconds" min="0" max="59" required><br><br>
+              
+                <div class="button">
+            
+              <button onclick="getTime()">Submit</button><br><br>
+                </form>
+                </div>
+            
+              <div id="result"></div>
+              
+              </div>
+                 
+                    <div class="container">
+                <div class="wrapper">
+                    <h2>Start the timer when you start breastfeeding</h2><br><br><br><br><br>
+                 
+                    <p>
+                        <span class="mins">00</span>:<span class="seconds">00</span>:<span class="tens">00</span>
+                    </p> <br>
+                    <button class="btn-start">Start</button>
+                    <button class="btn-stop">Stop</button>
+                    <button class="btn-reset">Reset</button>
+                </div>
+            </div>
+             
+    <!-- =========== Scripts =========  -->
+    <script src="../scripts/ashfaq.js"></script>
+
+    <!-- ====== ionicons ======= -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+</body>
+</html>

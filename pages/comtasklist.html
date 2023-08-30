@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Book</title>
+
+    <!--================ style ==================-->
+    <link rel="stylesheet" href="../src/css/common.css">
+    <link rel="stylesheet" href="../src/css/tasklist.css">
+    
+</head>
+
+<body>
+    <!-- =============== Navigation ================ -->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <img src="" alt="logo">
+                        </span>
+                        <span class="title1"><h1>Mom & Me</h1></span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../pages/first.html">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../pages/comnote.html">
+                        <span class="icon">
+                            <ion-icon name="clipboard-outline"></ion-icon>
+                        </span>
+                        <span class="title">Note</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../pages/comcontact.html">
+                        <span class="icon">
+                            <ion-icon name="call-outline"></ion-icon>
+                        </span>
+                        <span class="title">Contact</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="../pages/comsetting.html">
+                        <span class="icon">
+                            <ion-icon name="settings-outline"></ion-icon>
+                        </span>
+                        <span class="title">Settings</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="../pages/comsignout.html">
+                        <span class="icon">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ========================= Main ==================== -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+
+                <a href="../pages/comuser.html">
+                <div class="user">
+                    <!-- <input type="text"  placeholder="Account"> -->
+                    <img src="../src/img/me.jpg" alt="">
+                    <div>
+                        <h4>Dineshka.KS</h4>
+                        <small>Super admin</small>
+                    </div>
+                </div>
+                </a>
+            </div>
+
+            <!-- ======================= Cards ================== -->
+            <div class="scroll-container">
+            <div class="cardBox">
+                <div class="btn-group">
+                    <a href="../pages/comnote.html">
+                    <button class="cal">Calender & Events</button>
+                    </a>
+
+                    <a href="../pages/comtasklist.html">
+                    <button class="tsk">Task List</button>
+                    </a>
+                </div>
+
+                <div class="container1">
+                  <div class="row1">
+                    <h3 class="heading">TODAY<span class="arrow">▼</span></h2>
+                    <div class="content1">
+  
+                      <input type="text" placeholder=""><br>
+                      <input type="text" placeholder=""><br>
+
+                      <div class="button-container">
+                        <button class="send-button">Done</button>
+                      </div> 
+  
+                    </div>
+                  </div>
+  
+                  <div class="row1">
+                    <h3 class="heading">TOMORROW<span class="arrow">▼</span></h3>
+                    <div class="content1">
+  
+                      <input type="text" placeholder=""><br>
+                      <input type="text" placeholder=""><br>
+
+                      <div class="button-container">
+                        <button class="send-button">Done</button>
+                      </div> 
+
+                    </div>
+                  </div>
+  
+                  <div class="row1">
+                    <h3 class="heading">TIS MONTH<span class="arrow">▼</span></h3>
+                    <div class="content1">
+
+                      <input type="text" placeholder=""><br>
+                      <input type="text" placeholder=""><br>
+
+                      <div class="button-container">
+                        <button class="send-button">Done</button>
+                      </div> 
+
+                    </div>
+                  </div>
+
+                  <div class="row1">
+                   <h3 class="heading">LATER<span class="arrow">▼</span></h2>
+                   <div class="content1">
+    
+                      <input type="text" placeholder=""><br>
+                      <input type="text" placeholder=""><br>
+
+                      <div class="button-container">
+                        <button class="send-button">Done</button>
+                      </div> 
+
+                   </div>
+                  </div>
+
+                </div>
+                
+            </div>
+            </div>
+
+            <!-- ================ Input & Output Details List ================= -->
+
+        </div>
+    </div>
+
+    <!-- =========== Scripts =========  -->
+    <script src="../scripts/common.js"></script>
+    <script src="../scripts/tasklist.js"></script>
+    
+
+    <!-- ====== ionicons ======= -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+</body>
+</html>

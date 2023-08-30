@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise</title>
+
+    <!--================ style ==================-->
+    <link rel="stylesheet" href="../src/css/solids.css">
+</head>
+
+<body>
+    <!-- =============== Navigation ================ -->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <img src="mom&me.jpg" alt="logo">
+                        </span>
+                        <span class="title1"><h1>Mom & Me</h1></span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../pages/first.html">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../pages/comnote.html">
+                        <span class="icon">
+                            <ion-icon name="clipboard-outline"></ion-icon>
+                        </span>
+                        <span class="title">Note</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../pages/comcontact.html">
+                        <span class="icon">
+                            <ion-icon name="call-outline"></ion-icon>
+                        </span>
+                        <span class="title">Contact</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="../pages/comsetting.html">
+                        <span class="icon">
+                            <ion-icon name="settings-outline"></ion-icon>
+                        </span>
+                        <span class="title">Settings</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="../pages/comsignout.html">
+                        <span class="icon">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ========================= Main ==================== -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+
+                <div class="user">
+                  <label>
+                    <input type="text" placeholder="Account">
+                    <img src="asq.jpg" alt="">
+                  </label>
+                </div>
+            </div>
+
+            <!-- ======================= Cards ================== -->
+            <div class="cardBox">
+
+              <a href="bottle.html">
+              <div class="back-card">
+                  <div>
+                      <button class="back-button">Back</button>
+                  </div>
+              </div>
+              </a>
+          </div>
+
+
+            <!-- ================ Input & Output Details List ================= -->
+            <center>
+                <a href="ashfaq.html">
+                    <button class="button">Breast</button>
+                        </a>
+                        <a href="bottle.html">
+                    <button class="button">Bottle</button>
+                        </a>
+                        <a href="solids.html">
+                    <button class="button">Solids</button>
+                        </a>
+            </center>
+<br><br>
+                <!-- <div class="food">
+                    <img src="baby-food.jpg">
+                </div> -->
+
+                <form action="solids.php" method="POST">
+
+                <div class="food-intake">
+                    <div class="lable">
+                        <div class="head">Food Item :</div>
+                        <input type="text" name="foodType" placeholder="">
+                    </div>
+                </div>
+                <br><br>
+                <div>
+                    <center>
+                    <input type="date" name="date">
+                    </center>
+                </div>
+
+                <div class="today-detail">
+                    <div class="Header">Today :-</div>
+                    
+                    <div class="today-data">
+                        <div class="icon ">
+                            <ion-icon name="fast-food-outline"></ion-icon>
+                        </div>
+                        <div class="lable">
+                            Age
+                            <input type="text" class="input-box" placeholder="Enter Age" name="age">
+                        </div>
+                        <div class="intake">
+                            <div>Food Intake :</div>
+                            <input type="text" class="input-box" placeholder="Enter Amount of Food" name="amt">
+                        </div>
+                    </div>
+                </div>
+                    <br><br><br><br>
+                    <center>
+                    <button type="submit" name="submit"> Submit</button>
+                    </center>
+                
+                </form>
+                <br>
+                <center>
+                <a href="solidslog.php">
+                    <button>View my baby's solid feeding log</button>
+                                </a>
+                </center>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- =========== Scripts =========  -->
+    <script src="../scripts/first.js"></script>
+
+    <!-- ====== ionicons ======= -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+</body>
+</html>

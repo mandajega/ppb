@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Book</title>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Google+Sans:300,400,500'><link rel="stylesheet" href="../src/css/calenstyle.css">
+
+
+    <!--================ style ==================-->
+    <link rel="stylesheet" href="../src/css/common.css">
+    <link rel="stylesheet" href="../src/css/note.css">
+    
+</head>
+
+<body>
+    <!-- =============== Navigation ================ -->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <img src="" alt="logo">
+                        </span>
+                        <span class="title1"><h1>Mom & Me</h1></span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../pages/first.html">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../pages/comnote.html">
+                        <span class="icon">
+                            <ion-icon name="clipboard-outline"></ion-icon>
+                        </span>
+                        <span class="title">Note</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../pages/comcontact.html">
+                        <span class="icon">
+                            <ion-icon name="call-outline"></ion-icon>
+                        </span>
+                        <span class="title">Contact</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="../pages/comsetting.html">
+                        <span class="icon">
+                            <ion-icon name="settings-outline"></ion-icon>
+                        </span>
+                        <span class="title">Settings</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="../pages/comsignout.html">
+                        <span class="icon">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ========================= Main ==================== -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+
+                <a href="../pages/comuser.html">
+                <div class="user">
+                    <!-- <input type="text"  placeholder="Account"> -->
+                    <img src="../src/img/me.jpg" alt="">
+                    <div>
+                        <h4>Dineshka.KS</h4>
+                        <small>Super admin</small>
+                    </div>
+                </div>
+                </a>
+            </div>
+
+            <!-- ======================= Cards ================== -->
+           
+            <div class="cardBox">
+                <div class="btn-group">
+                    <a href="../pages/comnote.html">
+                    <button class="cal">Calender & Events</button>
+                    </a>
+
+                    <a href="../pages/comtasklist.html">
+                    <button class="tsk">Task List</button>
+                    </a>
+                </div>
+            </div>    
+
+                            <!-- ================ Order Details List ================= -->
+            <div class="row">
+                <div class="leftcolumn">
+                    
+                    <div class="wrapper">
+                        <!-- partial:index.partial.html -->
+                        <div id="app">
+                            <div class="container">
+                                 <Calendar />
+                            </div>
+                        </div>
+                    
+                    </div>
+
+                </div>
+
+                <div class="rightcolumn">
+                    <div class="card">
+                        <h2>Diary Notes :</h2>
+
+                    <div class="sug">
+                        <input type="text" name="fname">
+                    </div>
+                    
+                  </div>
+
+                </div>
+
+                <div>
+                    <button class="submit-button" type="submit">Submit</button>
+                </div>
+
+                <div>
+                    <button class="view-button" type="submit">view you log</button>
+                </div>
+
+            </div>
+
+                
+                
+            </div>
+            
+
+            <!-- ================ Input & Output Details List ================= -->
+
+        </div>
+    </div>
+
+    <!-- =========== Scripts =========  -->
+    <script src="../scripts/common.js"></script>
+    <script src="../scripts/script.js"></script>
+   
+     <!-- ====== ionicons ======= -->
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+     <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.22/vue.min.js'></script><script  src="../scripts/calen.js"></script>
+ 
+
+    <!-- ====== ionicons ======= -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+</body>
+</html>

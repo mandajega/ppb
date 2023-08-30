@@ -1,0 +1,119 @@
+.btn-group{
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  margin-left: 14%;
+  display: flex;
+}
+.btn-group button {
+    background-color: #ef4da6; /* Green background */
+    border: 1px solid #940051(128, 0, 115); /* Green border */
+    color: white; /* White text */
+    padding: 10px 70px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+    width: 20rem;
+  }
+  .btn-group .cal{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  .btn-group .tsk{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  
+  /* Clear floats (clearfix hack) */
+  .btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+  }
+  
+  /* Add a background color on hover */
+  .btn-group button:hover {
+    background-color: pink;
+    color: #940051;
+  }
+
+  .container1 {
+      width: 400px; /* Adjust the width as needed */
+      margin: 0 auto;
+      margin-right: 500px;
+      margin-top: .5rem;
+    }
+    
+    .row1 {
+      border-bottom: 1px solid black;
+      padding: 10px 0;
+    }
+    
+    .heading {
+      cursor: pointer;
+    }
+    
+    .arrow {
+      display: inline-block;
+      transform: rotate(-90deg);
+      transition: transform 0.3s ease;
+    }
+    
+    .open .arrow {
+      transform: rotate(0deg);
+    }
+    
+    .content1 {
+      display: none;
+      padding: 10px 0;
+    }
+    
+    .open .content1 {
+      display: block;
+    }
+    .content1 input{
+      font-size: 1rem;
+      margin-top: 5px;
+      width: 25rem;
+      height: 2rem;
+    }
+
+    .input-container {
+      display: flex;
+      align-items: center;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .button-container {
+      text-align: center;
+      width: 25rem;
+      height: 2rem;
+    }
+    
+    .save-button,
+    .send-button {
+      padding: 5px 10px;
+      margin-top: .5rem;
+      margin-left: 20rem;
+      border: gray;
+      background-color: #f0f0f0;
+      color: #333;
+      font-size: 14px;
+      border-radius: 10px;
+      width: 5rem;
+      height: 2rem;
+    }
+    
+    .save-button:hover,
+    .send-button:hover {
+      background-color: lightslategray;
+      cursor: pointer;
+    }
+    
+    .save-button + .send-button {
+      margin-left: 250px;
+    }
