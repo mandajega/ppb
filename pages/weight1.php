@@ -1,10 +1,10 @@
 <?php
 session_start();
-// Establish a connection to your MySQL database
-$host = "localhost";  // Replace with your MySQL host
-$username = "root";  // Replace with your MySQL username
-$password = "";  // Replace with your MySQL password
-$database = "momandme";  // Replace with your MySQL database name
+
+$host = "localhost";  
+$username = "root";  
+$password = "";  
+$database = "momandme";  
 
 $conn = mysqli_connect($host, $username, $password, $database);
 
@@ -25,8 +25,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $newWeight = $_POST["new_weight"];
     $newDate = $_POST["new_date"];
     $user_id = $_SESSION["user_id"];
+    
 
-    $weightDifference = $newWeight - $lastWeight;
+    
 
     // Insert the data into the MySQL table
     $sql = "INSERT INTO babyweighttracker (user_id, weight, date) VALUES ('$user_id','$newWeight', '$newDate')";
@@ -57,6 +58,12 @@ if ($result && mysqli_num_rows($result) > 0) {
     $lastWeight = 'N/A';
     $lastDate = 'N/A';
 }
+
+if (!isset($_SESSION['weight'])) {
+    $_SESSION['weight'] = $lastWeight;
+}
+
+
 
 
 
@@ -94,7 +101,7 @@ mysqli_close($conn);
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="../pages/first.html">
                         <span class="icon">
                             <ion-icon name="home-outline"></ion-icon>
                         </span>
@@ -103,7 +110,7 @@ mysqli_close($conn);
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="../pages/comnote.html">
                         <span class="icon">
                             <ion-icon name="clipboard-outline"></ion-icon>
                         </span>
@@ -112,7 +119,7 @@ mysqli_close($conn);
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="../pages/comcontact.html">
                         <span class="icon">
                             <ion-icon name="call-outline"></ion-icon>
                         </span>
@@ -121,7 +128,7 @@ mysqli_close($conn);
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="../pages/comsetting.html">
                         <span class="icon">
                             <ion-icon name="settings-outline"></ion-icon>
                         </span>
@@ -130,7 +137,7 @@ mysqli_close($conn);
                 </li>
                 
                 <li>
-                    <a href="#">
+                    <a href="../pages/comsignout.html">
                         <span class="icon">
                             <ion-icon name="log-out-outline"></ion-icon>
                         </span>
@@ -147,12 +154,7 @@ mysqli_close($conn);
                     <ion-icon name="menu-outline"></ion-icon>
                 </div>
 
-                <div class="search">
-                    <label>
-                        <input type="text" placeholder="Search here">
-                        <ion-icon name="search-outline"></ion-icon>
-                    </label>
-                </div>
+                
 
                 <div class="user">
                   <label>
@@ -168,6 +170,7 @@ mysqli_close($conn);
                 
                 <div class="back-card">
                     <div>
+                        <a href= "track.html">
                         <button class="back-button">Back</button>
                     </div>
                 </div>
