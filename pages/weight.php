@@ -147,13 +147,6 @@ mysqli_close($conn);
                     <ion-icon name="menu-outline"></ion-icon>
                 </div>
 
-                <div class="search">
-                    <label>
-                        <input type="text" placeholder="Search here">
-                        <ion-icon name="search-outline"></ion-icon>
-                    </label>
-                </div>
-
                 <div class="user">
                   <label>
                     <input type="text" placeholder="Account">
@@ -165,7 +158,7 @@ mysqli_close($conn);
             <!-- ======================= Cards ================== -->
             <div class="cardBox">
 
-                
+                <a href="track.html">
                 <div class="back-card">
                     <div>
                         <button class="back-button">Back</button>
@@ -175,7 +168,7 @@ mysqli_close($conn);
   
                 <div class="head-card">
                     <div>
-                        <div class="cardName">Weight tracker</div>
+                        <div class="cardName">Weight Tracker</div>
                     </div>
                 </div>
 

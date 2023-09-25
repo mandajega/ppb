@@ -239,6 +239,7 @@ body {
 }
 
 /* ======================= Cards ====================== */
+/* ======================= Cards ====================== */
 .cardBox {
   position: relative;
   width: 100%;
@@ -248,83 +249,53 @@ body {
   grid-gap: 5%;
 }
 
-.cardBox .back-card {
-  position: relative;
-  background: var(--white);
-  width: 8rem;
-  height: 4rem;
-  padding: 1.5rem;
-  border-radius: 20px;
-  display: flex;
-  justify-content: space-between;
-  cursor: pointer;
-  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
-}
-
 .cardBox .head-card {
   position: relative;
-  background: var(--white);
-  width: 50rem;
+  background: #efefef;
+  /* text-align: center; */
+  width: 40rem;
   height: 0rem;
-  padding: 2rem;
-  border-radius: 20px;
+  padding: 20px;
+  border-radius: 10px;
   display: flex;
   justify-content: space-between;
   cursor: auto;
   box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
 }
 
-.cardBox .cha-card {
-  position: relative;
-  background: var(--white);
-  right: -50%;
-  width: 4rem;
-  height: 4rem;
-  padding: 10px;
-  border-radius: 20px;
-  display: flex;
-  justify-content: space-between;
-  cursor: pointer;
-  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
-}
-
-.cardBox .back-card .cardName {
-  color: var(--black2);
-  font-size: 1.5rem;
-  margin-top: -0.25rem;
-  margin-left: -3rem;
-}
-
-.cardBox .head-card .cardName {
-  color: var(--black2);
-  font-size: 2rem;
-  margin-top: -15px;
-  margin-left: 18rem;
-  text-align: center;
-}
-
-.cardBox .back-card .iconBx {
-  font-size: 3.5rem;
-  color: var(--black2);
-  margin-top: -1.1rem;
-  margin-left: -1.5rem;
-}
-
-.cardBox .cha-card .iconBx {
-  font-size: 2.5rem;
-  color: var(--black2);
-}
-
-.cardBox .back-card:hover,
-.cardBox .cha-card:hover {
+.cardBox .back-button:hover{
   background: var(--blue);
 }
 
-.cardBox .back-card:hover .cardName,
-.cardBox .back-card:hover .iconBx,
-.cardBox .cha-card:hover .iconBx {
-  color: var(--white);
+.back-button {
+  display: flex;
+  padding: 10px;
+  background-color: #efefef;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
 }
+
+.back-button::before {
+  content: '\2190'; /* Unicode arrow left character */
+  margin-right: 5px;
+}
+
+.back-button:hover {
+  background-color: #dedede;
+}
+
+.cardBox .head-card .cardName {
+  color: black;
+  font-size: 1.5rem;
+  margin-top: -25rem;
+  margin-left: 12rem;
+  display: inline-block;
+  text-align: center;
+}
+
 
 /* ================== Order Details List ============== */
 /* Left column */
