@@ -3,13 +3,7 @@
 //Start session
 session_start();
 
-// Function to sanitize input data
-function sanitize_input($data) {
-    $data = trim($data);
-    $data = stripslashes($data);
-    $data = htmlspecialchars($data);
-    return $data;
-}
+
 
 $servername = "localhost";
 $username = "root";
@@ -27,11 +21,7 @@ $user_id = $_SESSION['user_id'];
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Get the form data and sanitize it
-    $ingredient = sanitize_input($_POST['option']);
-    $date = sanitize_input($_POST["date"]);
-    $amount = sanitize_input($_POST["amount"]);
-    $minutes = sanitize_input($_POST["minutes"]);
-    $seconds = sanitize_input($_POST["seconds"]);
+  
 
     if ($ingredient == "option1") {
         $ingredient_label = "Breast Milk";
