@@ -112,12 +112,15 @@
                             <!-- ================ Order Details List ================= -->
             <div class="row">
                 <div class="leftcolumn">
+
+                    <form method="POST" action="save_entry.php">
                     
                     <div class="wrapper">
                         <!-- partial:index.partial.html -->
                         <div id="app">
                             <div class="container">
                                  <Calendar />
+                                 <input type ="date" placeholder="Pick a date" fdprocessedid ="7munlk" name="entry_date">
                             </div>
                         </div>
                     
@@ -128,6 +131,7 @@
                 <div class="rightcolumn">
                     <div class="card">
                         <h2>Diary Notes :</h2>
+                        <textarea name="entry_notes" rows="4"></textarea>
 
                     <div class="sug">
                         <input type="text" name="fname">
@@ -140,9 +144,10 @@
                 <div>
                     <button class="submit-button" type="submit">Submit</button>
                 </div>
+            </form>
 
                 <div>
-                    <button class="view-button" type="submit">view you log</button>
+                    <button class="view-button" type="submit">View your log</button>
                 </div>
 
             </div>
