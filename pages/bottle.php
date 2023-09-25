@@ -5,23 +5,18 @@ session_start();
 
 
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "momandme";
+require_once('dbcon.php');
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
 $user_id = $_SESSION['user_id'];
 
+// Check if the form was submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Get the form data and sanitize it
-  
+    
+    $ingredient = ($_POST['option']);
+    $date = ($_POST["date"]);
+    $amount = ($_POST["amount"]);
+    $minutes = ($_POST["minutes"]);
+    $seconds = ($_POST["seconds"]);
 
     if ($ingredient == "option1") {
         $ingredient_label = "Breast Milk";
